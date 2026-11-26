@@ -45,6 +45,13 @@ main { max-width: var(--breite); margin: 0 auto; padding: 22px 20px 48px; }
 .menue { display: flex; gap: 18px; font-size: .93rem; }
 .menue a { text-decoration: none; padding: 10px 0; }
 .menue a:hover { color: var(--petrol); }
+.kopf { flex-wrap: wrap; }
+/* Sprachwahl „Deutsche Bücher | English Books“ (26.11.2026) */
+.sprachwahl { display: flex; gap: 6px; font-size: .85rem; }
+.sprachwahl a { text-decoration: none; padding: 8px 12px; min-height: 40px; display: inline-flex; align-items: center; border: 1px solid var(--linie); border-radius: 999px; color: var(--tinte); white-space: nowrap; }
+.sprachwahl a:hover { border-color: var(--tinte); }
+.sprachwahl a[aria-current] { background: var(--tinte); border-color: var(--tinte); color: var(--grund); font-weight: 600; }
+@media (max-width: 759px) { .sprachwahl { width: 100%; justify-content: center; } }
 
 /* Fuß */
 .fuss { border-top: 1px solid var(--linie); padding: 36px 20px 40px; text-align: center; font-size: .9rem; color: var(--grau); }
@@ -217,3 +224,6 @@ main { max-width: var(--breite); margin: 0 auto; padding: 22px 20px 48px; }
 .seite-thriller .fuss { border-top-color: #2C3038; color: #A9A49C; }
 .seite-thriller .fuss-links a { color: #E9E6E1; }
 .seite-thriller .menue a:hover { color: #E06A66; }
+.seite-thriller .sprachwahl a { color: #E9E6E1; border-color: #2C3038; }
+.seite-thriller .sprachwahl a:hover { border-color: #E06A66; }
+.seite-thriller .sprachwahl a[aria-current] { background: #E9E6E1; color: #08090B; border-color: #E9E6E1; }
